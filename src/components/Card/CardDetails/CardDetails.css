@@ -1,0 +1,117 @@
+.cardinfo {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-auto-rows: auto; 
+  gap: 15px;
+}
+
+.cardinfo_box {
+  display: flex;
+  flex-direction: column;
+  height: fit-content ;
+}
+
+.cardinfo_box_title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cardinfo_box_body {
+  background-color: var(--bg-color);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.cardinfo_box_labels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cardinfo_box_labels label {
+  border-radius: 40px;
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.cardinfo_box_labels label svg {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.cardinfo_box ul {
+  display: flex;
+  gap: 15px;
+  margin-left: 5px;
+}
+
+.cardinfo_box ul li {
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cardinfo_box ul .li_active {
+  border: 2px solid yellow;
+  padding: 2px;
+}
+
+.card__action__btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__action__btn button {
+  width: 100%;
+  justify-content: center;
+}
+
+.cardinfo_box_task_checkbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.task__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task__checkbox input[type="checkbox"] {
+  margin: 0;
+}
+
+.task__checkbox p {
+  margin: 0;
+}
+
+.cardinfo_box_progress-bar {
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+.cardinfo_box_progress {
+  height: 100%;
+  background-color: #61bd4f;
+  transition: width 0.3s ease;
+}
